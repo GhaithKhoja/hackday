@@ -1,0 +1,11 @@
+poolenv
+hackdayenv
+__pycache__
+pool.egg-info
+node_modules
+bundle.js
+bundle.js.map
+credentials.py
+passwordTest.py
+build
+.DS_Store
