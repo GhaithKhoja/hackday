@@ -1,2 +1,1 @@
-# pool-web
-pool web app
+# Hackday web template REACT + Flask

@@ -1,7 +1,7 @@
 poolenv
 hackdayenv
 __pycache__
-pool.egg-info
+hackday.egg-info
 node_modules
 bundle.js
 bundle.js.map
