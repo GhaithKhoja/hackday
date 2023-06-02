@@ -2,6 +2,7 @@ README.md
 setup.py
 hackday/__init__.py
 hackday/config.py
+hackday/credentials.py
 hackday/model.py
 hackday/utils.py
 hackday.egg-info/PKG-INFO

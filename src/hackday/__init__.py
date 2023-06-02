@@ -19,3 +19,4 @@ import hackday.views  # noqa: E402  pylint: disable=wrong-import-position
 import hackday.model  # noqa: E402  pylint: disable=wrong-import-position
 import hackday.api  # noqa: E402  pylint: disable=wrong-import-position
 import hackday.utils # noqa: E402  pylint: disable=wrong-import-position
+import hackday.credentials # noqa: E402  pylint: disable=wrong-import-position
