@@ -14,4 +14,9 @@ export const Colors = {
   darkRed: "#4d0000",
   darkPurple: "#300a48",
   brightPurple: "#601390",
+  fried: "#e19f3a",
+  darkFried: "#735F40",
+  lightFried: "#F4C989",
+  paper: "#fbfbf8",
+  goLink: "#00beac",
 };
