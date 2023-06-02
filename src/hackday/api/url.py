@@ -5,4 +5,4 @@ import hackday
 @hackday.app.route('/api/v1/', methods=['GET'])
 def get_resources():
     """Return a JSON response of all API urls."""
-    return jsonify(**{'url': '/api/v1/'})
+    return jsonify(**{'url': '/api/v1/', 'search': '/api/v1/search/'})

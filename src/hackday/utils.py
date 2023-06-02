@@ -28,6 +28,6 @@ def return_bad_request():
     }
     return jsonify(**context)
 
-def capitalize_words(s):
+def lower_words(s):
     """Captalizes each word in a string s."""
-    return ' '.join([word.capitalize() for word in s.split()])
+    return ' '.join([word.lower() for word in s.split()])
