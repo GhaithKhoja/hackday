@@ -69,7 +69,6 @@ def search_repositories():
         else:
             break 
     
-    i = 0
     # Iterate through repos to fill information
     for repo in repos:
         # Check if we can check this repo or not
@@ -88,7 +87,7 @@ def search_repositories():
         language_list[repo["language"]] += 1
         
     # Fill other information
-    context['avg_repo_size'] = f"{total_repos_size//context['total_repo_count']} KB" if context['total_repo_count'] else 0
+    context['avg_repo_size'] = hackday.utils.calculate_average_size(total_repos_size, context["total_repo_count"])
     context["language_list"] = language_list.most_common()
  
     return jsonify(**context)
