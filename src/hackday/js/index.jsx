@@ -93,7 +93,7 @@ class Index extends React.Component {
               <OrderSpan>Avg repo size: {avgSize}</OrderSpan>
               <OrderSpan>Languages used:</OrderSpan>
               {langList.map((item, index) => (
-              <OrderSpan key={index}>{item}</OrderSpan>
+              <OrderSpan key={index}>{item[0]} {item[1]}</OrderSpan>
               ))}
             </>
           ) : (

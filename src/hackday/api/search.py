@@ -84,7 +84,8 @@ def search_repositories():
         # Add size
         total_repos_size += repo["size"]
         # Add language to the languages list
-        language_list[repo["language"]] += 1
+        if repo["language"]:
+            language_list[repo["language"]] += 1
         
     # Fill other information
     context['avg_repo_size'] = hackday.utils.calculate_average_size(total_repos_size, context["total_repo_count"])
