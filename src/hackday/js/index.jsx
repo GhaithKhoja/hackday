@@ -28,7 +28,10 @@ class Index extends React.Component {
   handleSearchSubmit = () => {
     fetch(`/api/v1/search/?username=${this.state.username}`, { credentials: "same-origin", method: "GET" })
       .then((response) => {
-        if (!response.ok) throw Error(response.statusText);
+        console.log(response.status);
+        if (!response.ok) {
+          throw new Error(response.statusText);
+        }
         return response.json();
       })
       .then((data) => {

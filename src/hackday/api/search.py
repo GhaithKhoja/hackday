@@ -48,6 +48,8 @@ def search_repositories():
     # Counter object that will keep track of languages used and their usage count
     language_list = Counter()
     
+    # To check if the username exists
+    username_exists = False
     # Start making requests to the github API until we searched all repos
     while True:
         # Make a request
@@ -56,6 +58,7 @@ def search_repositories():
         # If request is successful 
         if response.status_code == 200:
             # Turn data to JSON
+            username_exists = True
             data = response.json()
             
             # Append repos
@@ -67,6 +70,8 @@ def search_repositories():
             else:
                 break
         else:
+            if not username_exists:
+                    return hackday.utils.return_bad_request()
             break 
     
     # Iterate through repos to fill information
